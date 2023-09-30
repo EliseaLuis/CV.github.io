@@ -44,6 +44,9 @@ form.contacto_for{
 form.contacto_for .fila{
     padding: 0.8rem;
 }
+/* Carrusel */
+
+  
 /* SECCION INICIO */
 .inicio{
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
@@ -51,8 +54,15 @@ form.contacto_for .fila{
     background-size: cover;
     background-position: center center;
     color: #fff;
-    
+    position: relative; /* Establece una posición relativa para la sección */
+
 }
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
+
 .inicio .contenido-seccion{
     max-width: 1000px;
     margin: auto;
@@ -436,4 +446,60 @@ button{
     .contacto .contenido-seccion .fila{
         display: block;
     }
+}
+
+/* SECCION carrusel */
+
+/* Estilo para el carrusel en sí */
+#theCarousel {
+    display: inline-block; /* Hace que el carrusel sea un bloque en línea */
+    margin: 0 auto; /* Establece el margen automático para centrarlo horizontalmente */
+
+}
+
+.carrusel{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.carrusel .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.carrusel .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.carrusel .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.carrusel .contenido-seccion .info .col{
+    width: 45%;
+}
+.carrusel .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+
+}
+.carrusel .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.carrusel .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+.carrusel .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.carrusel .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
 }
